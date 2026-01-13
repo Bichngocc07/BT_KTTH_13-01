@@ -90,3 +90,6 @@ SELECT *
 FROM View_StudentCountByDept
 ORDER BY TotalStudents DESC
 LIMIT 1;
+
+-- Câu 5b: Gọi thủ tục
+CALL GetTopScoreStudent('C00001');
