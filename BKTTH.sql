@@ -74,6 +74,8 @@ SELECT
 FROM Student s join department d on s.deptid = d.deptid ;
 drop view View_StudentBasic;
 select * from View_StudentBasic;
+-- Câu 2: Regular Index cho FullName
+CREATE INDEX idx_student_fullname ON Student(FullName);  
 
 -- Câu 4: a)Tạo View View_StudentCountByDept hiển thị: DeptName, TotalStudents (số sinh viên mỗi khoa).
 CREATE View View_StudentCountByDept AS
