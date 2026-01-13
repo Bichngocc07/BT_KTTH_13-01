@@ -84,4 +84,7 @@ SELECT
 drop view View_StudentCountByDept;
 select * from View_StudentCountByDept;
 -- b)Từ View trên, viết truy vấn hiển thị khoa có nhiều sinh viên nhất.
-
+SELECT *
+FROM View_StudentCountByDept
+ORDER BY TotalStudents DESC
+LIMIT 1;
